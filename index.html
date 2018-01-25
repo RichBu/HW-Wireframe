@@ -8,13 +8,20 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+    <!--  use id's instead of class .. just because  -->
     <section id="header">
         <p>Header</p>
     </section>
     <section id="nav">
         <p>Nav</p>
     </section>
+
+    <!-- put all this content into one containter -->
+    <!-- then tried to use box flex for right column to self-adjust -->
+    <!-- in height so not fixed height, did not work, so revert back to fixed heights --> 
+    <!-- also tried percentages for height, did not work -->
     <div id="tot-content">
+      <!-- this is the left section container -->  
       <section id="section">
         <p>section</p>
         <section id="article">
@@ -27,10 +34,15 @@
             </section>    
         </section>
       </section>
+
+      <!-- this section floats left.  But height is fixed -->
+      <!-- ** if change height of section, need to change this height also -->
       <section id="aside">
         <p>Aside</p>
       </section>
     </div>
+
+    <!--  footer has a clear in the CSS to make it full width -->
     <section id="footer">
         <p>footer</p>
     </section>

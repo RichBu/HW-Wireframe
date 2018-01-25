@@ -44,6 +44,8 @@ body {
 }
 
 
+/*  this id has a fixed ht, if make changes, need to check */
+/* ht of id #aside    */
 #section {
     color: black;
     width: 460px;
@@ -54,7 +56,8 @@ body {
     padding: 10px;
 }
 
-
+/* this id has a fixed ht to make it same ht as section */
+/* if section ht changes, then need to change this ht also */
 #aside {
     background-color: #ebebeb;
     text-align: center;
